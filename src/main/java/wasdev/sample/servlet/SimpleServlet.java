@@ -25,5 +25,11 @@ public class SimpleServlet extends HttpServlet {
         response.setContentType("text/html");
         response.getWriter().print("Hello World "+message.getMessage()+"!");
     }
+    
+    @Override
+    public void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
+    // Servlet code
+        System.out.println("doPost()");
+    }
 
 }
